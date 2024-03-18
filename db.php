@@ -12,12 +12,6 @@ $db = new PDO(
 try {
     $stmt = $db->prepare("INSERT INTO application SET name = ?");
     $stmt->execute([$_POST['fio']]);
-}
-catch(PDOException $e){
-    print('Error : ' . $e->getMessage());
-    exit();
-}
-try {
     $stmt = $db->prepare("INSERT INTO application SET name = ?");
     $stmt->execute([$_POST['tel']]);
 }
@@ -25,4 +19,5 @@ catch(PDOException $e){
     print('Error : ' . $e->getMessage());
     exit();
 }
+
 ?>
