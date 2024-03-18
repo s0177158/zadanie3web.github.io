@@ -1,5 +1,5 @@
 <?PHP
-header('Content-Type: text/html; charset=UTF-8');
+
 require_once('db.php');
 $fio - $_POST['fio'];
 $tel - $_POST['tel'];
