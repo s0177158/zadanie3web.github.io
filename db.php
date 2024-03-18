@@ -10,7 +10,7 @@ $db = new PDO(
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO form (name) VALUES (:login)");
+    $stmt = $db->prepare("INSERT INTO form (name) VALUES (:fio)");
     $fio - $_POST['fio'];
 }
 catch(PDOException $e){
