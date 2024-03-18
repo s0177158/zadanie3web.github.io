@@ -10,10 +10,8 @@ $db = new PDO(
 );
 
 try {
-    $stmt = $db->prepare("INSERT INTO application SET name = ?");
-    $stmt->execute([$_POST['fio']]);
-    $stmt = $db->prepare("INSERT INTO application SET name = ?");
-    $stmt->execute([$_POST['tel']]);
+    $stmt = $db->prepare("INSERT INTO form (name) VALUES (:login)");
+    $fio - $_POST['fio'];
 }
 catch(PDOException $e){
     print('Error : ' . $e->getMessage());
